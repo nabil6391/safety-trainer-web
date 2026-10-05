@@ -1,0 +1,138 @@
+{
+  "id": "SOP-HYG-003",
+  "title": "Cleanroom Gowning: Dress Your Colleague",
+  "version": "1.0",
+  "summary": "Hand over the right garments, in the right order, and watch them go on.",
+  "story": "Aseptic areas (where sterile medicines are filled) need stricter gowning than a normal production floor. Here you coach a colleague through it: pick each garment from the table and hand it over. Only cleanroom-approved items are allowed, so street clothes, watches and make-up have to stay out. Each garment goes on in a set order so that the cleanest items touch nothing dirty.",
+  "glossary": [
+    {
+      "term": "Aseptic",
+      "def": "Done in a way that keeps everything sterile (free of living microbes), for example when filling injectable medicines."
+    },
+    {
+      "term": "Coverall",
+      "def": "A one-piece suit that covers the whole body so skin and clothing shed nothing into the room."
+    },
+    {
+      "term": "Particle",
+      "def": "A speck of dust, skin or fibre. Cleanrooms count them, and people are the main source."
+    },
+    {
+      "term": "Sterile gloves",
+      "def": "Gloves supplied germ-free. They go on last and are sanitised during work."
+    },
+    {
+      "term": "Deviation",
+      "def": "Any departure from the written procedure. In a regulated plant each one is recorded."
+    },
+    {
+      "term": "Audit trail",
+      "def": "A tamper-evident record of who did what and when, so an inspector can verify the training happened."
+    }
+  ],
+  "model": "procedural:gowning-guided",
+  "focus": "mannequin",
+  "camDist": 4.6,
+  "hoverLabels": true,
+  "passMark": 3,
+  "steps": [
+    {
+      "targetId": "hood",
+      "label": "Hood",
+      "instruction": "Hand your colleague the sterile hood. It goes on first and must cover all hair.",
+      "hazard": "Hair and skin shed thousands of particles a minute; the hood contains them.",
+      "wrongHint": "Start with the hood: everything else is fitted over it."
+    },
+    {
+      "targetId": "mask",
+      "label": "Face mask",
+      "instruction": "Now the face mask. It must cover the nose and chin.",
+      "hazard": "Breathing and speaking release droplets and microbes.",
+      "wrongHint": "The mask goes on straight after the hood."
+    },
+    {
+      "targetId": "coverall",
+      "label": "Coverall",
+      "instruction": "Pass the coverall. Your colleague steps into it without letting it touch the floor.",
+      "hazard": "A coverall that touches the floor is contaminated.",
+      "wrongHint": "The coverall comes after hood and mask, before shoe covers."
+    },
+    {
+      "targetId": "shoes",
+      "label": "Shoe covers",
+      "instruction": "Pass the shoe covers. They are fitted sitting on the bench, swinging each leg over the line.",
+      "hazard": "Dirty-side shoes must never touch the clean-side floor.",
+      "wrongHint": "Shoe covers go on after the coverall and before gloves."
+    },
+    {
+      "targetId": "gloves",
+      "label": "Sterile gloves",
+      "instruction": "Last of all: sterile gloves, pulled over the coverall cuffs.",
+      "hazard": "Gloves put on early get contaminated while dressing.",
+      "wrongHint": "Gloves are always last, once everything else is fitted."
+    }
+  ],
+  "distractors": [
+    {
+      "targetId": "watch",
+      "label": "Wristwatch",
+      "hint": "Watches and jewellery shed particles and trap microbes. Nothing like that is allowed in a cleanroom."
+    },
+    {
+      "targetId": "jacket",
+      "label": "Street jacket",
+      "hint": "Street clothing carries dirt and fibres. It never goes past the changing line."
+    },
+    {
+      "targetId": "cosmetics",
+      "label": "Make-up",
+      "hint": "Cosmetics shed particles and are banned in cleanrooms."
+    }
+  ],
+  "quiz": [
+    {
+      "text": "Which garment goes on first?",
+      "options": [
+        "Coverall",
+        "Gloves",
+        "Hood",
+        "Shoe covers"
+      ],
+      "correct": 2,
+      "ref": "SOP-HYG-003 s4.1"
+    },
+    {
+      "text": "Which of these may you wear into the cleanroom?",
+      "options": [
+        "Wristwatch",
+        "Own make-up",
+        "Street jacket",
+        "None of them"
+      ],
+      "correct": 3,
+      "ref": "SOP-HYG-003 s3.2"
+    },
+    {
+      "text": "Where are shoe covers fitted?",
+      "options": [
+        "Standing at the door",
+        "Sitting on the bench, over the line",
+        "In the corridor",
+        "After the gloves"
+      ],
+      "correct": 1,
+      "ref": "SOP-HYG-003 s4.4"
+    },
+    {
+      "text": "Why do gloves go on last?",
+      "options": [
+        "They are the biggest item",
+        "So they stay clean while dressing",
+        "They keep you warm",
+        "It is just tradition"
+      ],
+      "correct": 1,
+      "ref": "SOP-HYG-003 s4.5"
+    }
+  ]
+}

@@ -2,6 +2,34 @@
   "id": "SOP-LOTO-001",
   "title": "Lock-Out / Tag-Out: Packaging Line Press",
   "version": "1.2",
+  "summary": "Make a machine safe before anyone works on it.",
+  "story": "A packaging press can start by accident, or release stored pressure, while someone has a hand inside. Lock-out/tag-out (LOTO) is the routine that prevents it: stop the machine, cut its energy supply, lock the switch so nobody can turn it back on, release any stored energy, and only then prove it is dead. Skipping or reordering a step is how people get hurt, which is why the order is enforced here.",
+  "glossary": [
+    {
+      "term": "SOP",
+      "def": "Standard Operating Procedure: the approved written steps for a task. Everyone follows the same ones."
+    },
+    {
+      "term": "Lock-out / tag-out",
+      "def": "Locking an energy switch off and hanging a tag on it, so the machine cannot be restarted while someone is working on it."
+    },
+    {
+      "term": "Isolator",
+      "def": "The main switch that cuts a machine's power supply."
+    },
+    {
+      "term": "Bleed valve",
+      "def": "A valve that releases stored pressure (air or hydraulic) that would otherwise stay in the machine after power is off."
+    },
+    {
+      "term": "Deviation",
+      "def": "Any departure from the written procedure. In a regulated plant each one is recorded."
+    },
+    {
+      "term": "Audit trail",
+      "def": "A tamper-evident record of who did what and when, so an inspector can verify the training happened."
+    }
+  ],
   "model": "PackagingPress",
   "focus": "press_body",
   "camDist": 7.6,

@@ -2,6 +2,38 @@
   "id": "SOP-HYG-002",
   "title": "Hygiene Entry: Gowning for the Production Area",
   "version": "2.0",
+  "summary": "Enter a clean production area without carrying contamination in.",
+  "story": "In pharmaceutical and food plants, product is made in clean areas where a single hair, fibre or germ can ruin a batch or harm a patient. People are the biggest source of contamination, so everyone changes into clean clothing in a fixed order: wash, sanitise, coat, boots, gloves. The order matters because each step protects the next; for example, gloves go on last so they stay clean.",
+  "glossary": [
+    {
+      "term": "SOP",
+      "def": "Standard Operating Procedure: the approved written steps for a task. Everyone follows the same ones."
+    },
+    {
+      "term": "GMP",
+      "def": "Good Manufacturing Practice: the rules that make sure medicines and food are made consistently and safely."
+    },
+    {
+      "term": "Cleanroom",
+      "def": "A room where air and surfaces are controlled to keep particles and microbes very low."
+    },
+    {
+      "term": "Gowning",
+      "def": "Putting on clean clothing, in a set order, before entering a controlled area."
+    },
+    {
+      "term": "Interlock",
+      "def": "Two doors that cannot open at once, which keeps the air-pressure barrier between clean and dirty areas."
+    },
+    {
+      "term": "Deviation",
+      "def": "Any departure from the written procedure. In a regulated plant each one is recorded."
+    },
+    {
+      "term": "Audit trail",
+      "def": "A tamper-evident record of who did what and when, so an inspector can verify the training happened."
+    }
+  ],
   "model": "GowningRoom",
   "focus": "bench",
   "camDist": 4.9,
